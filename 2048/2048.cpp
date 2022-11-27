@@ -1,23 +1,9 @@
 #include <cstdlib>
 #include <iomanip>
 #include <iostream>
-using namespace std;
+#include "Display.h"
 
-void display(int body[4][4]) {
-    cout << setw(65) << "- - - - - - - - -" << endl;
-    cout << setw(50) << "| " << body[0][0] << " | " << body[0][1] << " | "
-        << body[0][2] << " | " << body[0][3] << " | " << endl;
-    cout << setw(65) << "- - - - - - - - -" << endl;
-    cout << setw(50) << "| " << body[1][0] << " | " << body[1][1] << " | "
-        << body[1][2] << " | " << body[1][3] << " | " << endl;
-    cout << setw(65) << "- - - - - - - - -" << endl;
-    cout << setw(50) << "| " << body[2][0] << " | " << body[2][1] << " | "
-        << body[2][2] << " | " << body[2][3] << " | " << endl;
-    cout << setw(65) << "- - - - - - - - -" << endl;
-    cout << setw(50) << "| " << body[3][0] << " | " << body[3][1] << " | "
-        << body[3][2] << " | " << body[3][3] << " | " << endl;
-    cout << setw(65) << "- - - - - - - - -" << endl;
-}
+using namespace std;
 
 int randAssign() {
     int num;
@@ -49,6 +35,7 @@ int main() {
         if (move == 'w') {
             for (int i = 1; i < 4; i++) {
                 for (int j = 0; j < 4; j++) {
+
                     if (body[i][j] != 0) {
                         body[0][j] = body[i][j];
                         body[i][j] = 0;
