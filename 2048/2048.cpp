@@ -1,6 +1,7 @@
 ﻿#include <cstdlib>
 #include <iomanip>
 #include <iostream>
+#include <windows.h>
 #include <time.h>
 #include "Display.h"
 #include "Move.h"
@@ -21,8 +22,8 @@ int main() {
 	spawn2y = randAssign();
 	body[spawn1x][spawn1y] = 2;
 	body[spawn2x][spawn2y] = 2;
+	system("Color E4");
 	while (true) {
-		system("Color E4");
 		Sleep(1000);
 		if (menuCounter == 1)
 		{
@@ -40,19 +41,17 @@ int main() {
 				instructions();
 			}
 			instruction = false;
-			cout << endl << " Please enter a move: ";
+			cout << endl << "Please enter a move: ";
 			cin >> move;
 			if (menuCounter != 1) {
 				system("cls");
-				cout << " Menu:" << endl;
-				cout << " 1. Start game" << endl;
-				cout << " 2. Exit" << endl << endl << " Your choice is --> " << menuChoice << endl << endl;
+				cout << " Your choice is --> " << menuChoice << endl << endl;
 				cout << " Instructions:" << endl;
 				cout << " The control keys are:" << endl;
 				cout << " a --> left" << endl;
 				cout << " d --> right" << endl;
 				cout << " w --> up" << endl;
-				cout << " s --> down" << endl << endl;
+				cout << " s --> down" << endl;
 				switch (move)
 				{
 				case 'w': upMove(body); break;

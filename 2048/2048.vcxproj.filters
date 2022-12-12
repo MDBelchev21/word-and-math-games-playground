@@ -18,6 +18,9 @@
     <ClCompile Include="2048.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DIsplay.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Display.h">
