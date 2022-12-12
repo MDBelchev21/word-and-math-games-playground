@@ -17,19 +17,19 @@ int upMove(int body[4][4])
 				{
 					if (body[x][y] == body[i][j])
 					{
-						body[x][y] *= 2;
+						body[x][y] += body[i][j];
 						body[i][j] = 0;
 					}
 					else
 					{
 						if (body[x][y] == 0)
 						{
-							body[x][y] = body[i][j];
+							body[x][y] += body[i][j];
 							body[i][j] = 0;
 						}
 						else
 						{
-							body[x + 1][y] = body[i][j];
+							body[x + 1][y] += body[i][j];
 							body[i][j] = 0;
 						}
 					}
@@ -57,19 +57,20 @@ int downMove(int body[4][4])
 				{
 					if (body[x][y] == body[i][j])
 					{
-						body[x][y] *= 2;
+						body[x][y] += body[i][j];
 						body[i][j] = 0;
 					}
 					else
 					{
 						if (body[x][y] == 0)
 						{
-							body[x][y] = body[i][j];
+							body[x][y] += body[i][j];
 							body[i][j] = 0;
 						}
 						else
 						{
-							body[x - 1][y] = body[i][j];
+							if(body)
+							body[x - 1][y] += body[i][j];
 							body[i][j] = 0;
 						}
 					}
@@ -97,19 +98,19 @@ int leftMove(int body[4][4])
 				{
 					if (body[x][y] == body[i][j])
 					{
-						body[x][y] *= 2;
+						body[x][y] += body[i][j];
 						body[i][j] = 0;
 					}
 					else
 					{
 						if (body[x][y] == 0)
 						{
-							body[x][y] = body[i][j];
+							body[x][y] += body[i][j];
 							body[i][j] = 0;
 						}
 						else
 						{
-							body[x][y + 1] = body[i][j];
+							body[x][y + 1] += body[i][j];
 							body[i][j] = 0;
 						}
 					}
@@ -137,19 +138,19 @@ int rightMove(int body[4][4])
 				{
 					if (body[x][y] == body[i][j])
 					{
-						body[x][y] *= 2;
+						body[x][y] += body[i][j];
 						body[i][j] = 0;
 					}
 					else
 					{
 						if (body[x][y] == 0)
 						{
-							body[x][y] = body[i][j];
+							body[x][y] += body[i][j];
 							body[i][j] = 0;
 						}
 						else
 						{
-							body[x][y - 1] = body[i][j];
+							body[x][y - 1] += body[i][j];
 							body[i][j] = 0;
 						}
 					}

@@ -6,13 +6,14 @@
 #include "Display.h"
 #include "Move.h"
 #include "Rand.h"
+#include "Check.h"
 using namespace std;
 
 int main() {
 	srand(time(NULL));
 	int menuChoice;
 	int menuCounter = 1;
-	bool instruction = true;
+	bool instruction = true, isOver;
 	int body[4][4] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 	char move;
 	int spawn1x, spawn1y, spawn2x, spawn2y;
@@ -59,15 +60,24 @@ int main() {
 				case 's': downMove(body); break;
 				case 'd': rightMove(body); break;
 				}
-				while (true) {
-					srand(time(NULL));
-					spawn1x = randAssign();
-					spawn1y = randAssign();
-					if (body[spawn1x][spawn1y] == 0)
-					{
-						body[spawn1x][spawn1y] = 2;
-						break;
+				isOver = checkOver(body);
+				if (isOver != true)
+				{
+					while (true) {
+						srand(time(NULL));
+						spawn1x = randAssign();
+						spawn1y = randAssign();
+						if (body[spawn1x][spawn1y] == 0)
+						{
+							body[spawn1x][spawn1y] = 2;
+							break;
+						}
 					}
+				}
+				else
+				{
+					system("cls");
+					cout << "Game Over";
 				}
 			}
 		}

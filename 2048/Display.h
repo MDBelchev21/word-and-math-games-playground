@@ -1,4 +1,6 @@
-﻿void display(int body[4][4]);
+﻿#pragma once
+
+void display(int body[4][4]);
 
 void menu();
 
