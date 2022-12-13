@@ -78,6 +78,7 @@ int main() {
 				{
 					system("cls");
 					cout << "Game Over";
+					break;
 				}
 			}
 		}
