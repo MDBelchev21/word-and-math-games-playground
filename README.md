@@ -1,6 +1,6 @@
 
 <p align="center">
-	<img src="Images/logo.png">
+	<img style="width: 100vw;" src="Images/logo.png">
 </p>
 
 <h1 align="center">Playground</h1>
