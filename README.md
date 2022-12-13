@@ -6,8 +6,8 @@
 <h2>What is it about?</h2>
 <p align="left">Team playground is aiming to make a game, the idea of which was conceived by the original 2048, made in 2014 by Gabriele Cirull, who at the time, was trying to program a game from scratch.
 <h2>Technologies used for this project</h2>
-<img style="width: 200px;" src="Images/word.png"> <img style="width: 200px;" src="Images/excel.png"> 
-<img style="width: 200px;" src="Images/powerpoint.png"> <img style="width: 200px;" src="Images/cpp.png"> <img style="width: 200px;" src="Images/vs.png"> 
+<img style="width: 200px; display: inline-block;" src="Images/word.png"> <img style="width: 200px; display: inline-block;" src="Images/excel.png"> 
+<img style="width: 200px; display: inline-block;" src="Images/powerpoint.png"> <img style="width: 200px; display: inline-block;" src="Images/cpp.png"> <img style="width: 200px; display: inline-block;" src="Images/vs.png"> 
 <h2>Collaborators</h2>
 <ul>
 <li>Martin Belchev - Backend Developer</li>
