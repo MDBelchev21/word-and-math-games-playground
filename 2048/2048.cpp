@@ -23,9 +23,10 @@ int main() {
 	spawn2y = randAssign();
 	body[spawn1x][spawn1y] = 2;
 	body[spawn2x][spawn2y] = 2;
-	system("Color E4");
+	system("Color B1");
 	while (true) {
 		Sleep(1000);
+		/* Check if this is the first iteration of the loop */
 		if (menuCounter == 1)
 		{
 			menu();
@@ -42,7 +43,8 @@ int main() {
 				instructions();
 			}
 			instruction = false;
-			cout << endl << "Please enter a move: ";
+			/* Entering the move of the game */
+			cout << endl << " Please enter a move: ";
 			cin >> move;
 			if (menuCounter != 1) {
 				system("cls");
@@ -64,6 +66,7 @@ int main() {
 				if (isOver != true)
 				{
 					while (true) {
+						/* Placing a 2 in a random place */
 						srand(time(NULL));
 						spawn1x = randAssign();
 						spawn1y = randAssign();
@@ -78,6 +81,7 @@ int main() {
 				{
 					system("cls");
 					cout << "Game Over";
+					cout << "Congratulations";
 					break;
 				}
 			}

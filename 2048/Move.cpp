@@ -4,6 +4,7 @@ using namespace std;
 
 int upMove(int body[4][4])
 {
+	/* MOVE UP FUNCTION */
 	int x, y;
 	for (int j = 0; j < 4; j++)
 	{
@@ -44,6 +45,7 @@ int upMove(int body[4][4])
 
 int downMove(int body[4][4])
 {
+	/* MOVE DOWN FUNCTION */
 	int x, y;
 	for (int j = 0; j < 4; j++)
 	{
@@ -85,6 +87,7 @@ int downMove(int body[4][4])
 
 int leftMove(int body[4][4])
 {
+	/* MOVE LEFT FUNCTION */
 	int x, y;
 	for (int i = 0; i < 4; i++)
 	{
@@ -125,6 +128,7 @@ int leftMove(int body[4][4])
 
 int rightMove(int body[4][4])
 {
+	/* MOVE RIGHT FUNCTION */
 	int x, y;
 	for (int i = 0; i < 4; i++)
 	{

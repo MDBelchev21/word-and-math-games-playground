@@ -5,8 +5,9 @@
 #include "Display.h"
 using namespace std;
 
-
 void display(int body[4][4]) {
+
+	/* BODY OF THE GAME */
 	cout << setw(65) << "_________________" << endl;
 	cout << setw(50) << "| " << body[0][0] << " | " << body[0][1] << " | "
 		<< body[0][2] << " | " << body[0][3] << " | " << endl;
@@ -26,19 +27,19 @@ void menu() {
 
 	cout << endl;
 
-	// This will be fixed soon!
-	cout << "\t||||||||||" << setw(20) << "||||||||||||||" << setw(20) << "||     ||" << setw(20) << "|||||||||||" << endl;
-	cout << "\t" << setw(10) << "|||" << setw(20) << "|||        |||" << setw(20) << "||     ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t" << setw(10) << "|||" << setw(20) << "|||        |||" << setw(20) << "||     ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t" << setw(10) << "||| " << setw(20) << "|||        |||" << setw(20) << "||     ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t" << setw(10) << "|||  " << setw(20) << "|||        |||" << setw(20) << "|||||||||" << setw(19) << " |||||||||" << endl;
-	cout << "\t" << setw(10) << "|||   " << setw(20) << "|||        |||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t" << setw(10) << "|||    " << setw(20) << "|||        |||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t" << setw(10) << "|||     " << setw(20) << "|||        |||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t" << setw(10) << "|||      " << setw(20) << "|||        |||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
-	cout << "\t||||||||||" << setw(20) << "||||||||||||||" << setw(20) << "       ||" << setw(20) << "|||||||||||" << endl;
+	/* BIG 2048 TEXT */
+	cout << "\t||||||||||" << setw(20) << "|||||||||||||"  << setw(13) << "||" << setw(7) << "||" << setw(20) << "|||||||||||" << endl;
+	cout << "\t" << setw(10) << "|||" << setw(10) << "|||" << setw(10) << "|||" << setw(20) << "||     ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t" << setw(9)  << "|||" << setw(11) << "|||" << setw(10) << "|||" << setw(20) << "||     ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t" << setw(8)  << "|||" << setw(12) << "|||" << setw(10) << "|||" << setw(20) << "||     ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t" << setw(7)  << "|||" << setw(13) << "|||" << setw(10) << "|||" << setw(20) << "|||||||||" << setw(19) << " |||||||||" << endl;
+	cout << "\t" << setw(6)  << "|||" << setw(14) << "|||" << setw(10) << "|||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t" << setw(5)  << "|||" << setw(15) << "|||" << setw(10) << "|||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t" << setw(4)  << "|||" << setw(16) << "|||" << setw(10) << "|||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t" << setw(3)  << "|||" << setw(17) << "|||" << setw(10) << "|||" << setw(20) << "       ||" << setw(20) << "|||     |||" << endl;
+	cout << "\t||||||||||" << setw(20) << "|||||||||||||"  << setw(20) << "||" << setw(20) << "|||||||||||" << endl;
 
-
+	/* MENU AND OPTIONS WITH ADDED SLEEP TIME */
 	cout << endl << endl << "\t\t\t\t M";
 	cout << "e";
 	Sleep(100);
@@ -95,6 +96,8 @@ void menu() {
 }
 
 void instructions() {
+
+	/* INSTRUCTIONS AND CONTROLS WITH ADDED SLEEP TIME */
 	Sleep(50);
 	cout << " I";
 	Sleep(50);

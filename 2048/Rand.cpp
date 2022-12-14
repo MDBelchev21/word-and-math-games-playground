@@ -3,6 +3,7 @@
 using namespace std;
 
 int randAssign() {
+	/* Assign random place of the new 2 on next move */
 	int num;
 	while (true) {
 		num = rand() % 4;

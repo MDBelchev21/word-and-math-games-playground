@@ -4,6 +4,7 @@ using namespace std;
 
 bool checkOver(int body[4][4])
 {
+	/* Checking for empty places in the body. If there aren't you lost the game. */
 	bool flag = 0;
 	for (int i = 0; i < 4; i++)
 	{
