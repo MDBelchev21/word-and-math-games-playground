@@ -8,19 +8,19 @@ using namespace std;
 void display(int body[4][4]) {
 
 	/* BODY OF THE GAME */
-	cout << setw(65) << "_________________" << endl;
-	cout << setw(50) << "| " << body[0][0] << " | " << body[0][1] << " | "
-		<< body[0][2] << " | " << body[0][3] << " | " << endl;
-	cout << setw(65) << "_________________" << endl;
-	cout << setw(50) << "| " << body[1][0] << " | " << body[1][1] << " | "
-		<< body[1][2] << " | " << body[1][3] << " | " << endl;
-	cout << setw(65) << "_________________" << endl;
-	cout << setw(50) << "| " << body[2][0] << " | " << body[2][1] << " | "
-		<< body[2][2] << " | " << body[2][3] << " | " << endl;
-	cout << setw(65) << "_________________" << endl;
-	cout << setw(50) << "| " << body[3][0] << " | " << body[3][1] << " | "
-		<< body[3][2] << " | " << body[3][3] << " | " << endl;
-	cout << setw(65) << "_________________" << endl;
+	cout << setw(65) << "---------------------" << endl;
+	cout << setw(45) << "|" << setw(4) << body[0][0] << "|" << setw(4) << body[0][1] << "|"
+		<< setw(4) << body[0][2] << "|" << setw(4) << body[0][3] << "|" << endl;
+	cout << setw(65) << "---------------------" << endl;
+	cout << setw(45) << "|" << setw(4) << body[1][0] << "|" << setw(4) << body[1][1] << "|"
+		<< setw(4) << body[1][2] << "|" << setw(4) << body[1][3] << "|" << endl;
+	cout << setw(65) << "---------------------" << endl;
+	cout << setw(45) << "|" << setw(4) << body[2][0] << "|" << setw(4) << body[2][1] << "|"
+		<< setw(4) << body[2][2] << "|" << setw(4) << body[2][3] << "|" << endl;
+	cout << setw(65) << "---------------------" << endl;
+	cout << setw(45) << "|" << setw(4) << body[3][0] << "|" << setw(4) << body[3][1] << "|"
+		<< setw(4) << body[3][2] << "|" << setw(4) << body[3][3] << "|" << endl;
+	cout << setw(65) << "---------------------" << endl;
 }
 
 void menu() {

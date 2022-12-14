@@ -30,8 +30,12 @@ int upMove(int body[4][4])
 						}
 						else
 						{
-							body[x + 1][y] += body[i][j];
-							body[i][j] = 0;
+							if (body[x + 1][y] == 0)
+							{
+								body[x + 1][y] += body[i][j];
+								body[i][j] = 0;
+							}
+							
 						}
 					}
 				}
@@ -71,9 +75,12 @@ int downMove(int body[4][4])
 						}
 						else
 						{
-							if(body)
-							body[x - 1][y] += body[i][j];
-							body[i][j] = 0;
+							if (body[x - 1][y] == 0)
+							{
+								body[x - 1][y] += body[i][j];
+								body[i][j] = 0;
+							}
+						
 						}
 					}
 				}
@@ -113,8 +120,12 @@ int leftMove(int body[4][4])
 						}
 						else
 						{
-							body[x][y + 1] += body[i][j];
-							body[i][j] = 0;
+							if (body[x][y + 1] == 0)
+							{
+								body[x][y + 1] += body[i][j];
+								body[i][j] = 0;
+							}
+							
 						}
 					}
 				}
@@ -154,8 +165,12 @@ int rightMove(int body[4][4])
 						}
 						else
 						{
-							body[x][y - 1] += body[i][j];
-							body[i][j] = 0;
+							if (body[x][y - 1] == 0)
+							{
+								body[x][y - 1] += body[i][j];
+								body[i][j] = 0;
+							}
+							
 						}
 					}
 				}
