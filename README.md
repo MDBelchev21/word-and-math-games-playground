@@ -6,6 +6,10 @@
 <h1 align="center">Playground</h1>
 <h2>What is it about?</h2>
 <p align="left">Team playground is aiming to make a game, the idea of which was conceived by the original 2048, made in 2014 by Gabriele Cirull, who at the time, was trying to program a game from scratch.
+<p> If you want to see our project then clone the repository: </p>	
+```
+https://github.com/MDBelchev21/word-and-math-games-playground
+```
 <h2>Technologies used for this project</h2>
 <img style="width: 150px;" src="Images/word.png"><br>
 <img style="width: 150px;" src="Images/excel.png"> <br>
